@@ -1,7 +1,7 @@
 {
-  "name": "webpack-test",
+  "name": "webpack-starter-with-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is simple react + webpack starter",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress",
