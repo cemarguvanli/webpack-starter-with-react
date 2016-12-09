@@ -20,14 +20,32 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel'
         }, {
-            test: /\.css$/,
-            loader: 'style!css?modules'
+            test: /\.scss$/,
+            loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+        }, {
+            test: /.*\.(gif|png|jpe?g|svg)$/i,
+            loaders: [
+                'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                'image-webpack'
+            ]
         }]
     },
-
-    postcss: [
-        require('autoprefixer')
-    ],
+    imageWebpackLoader: {
+        mozjpeg: {
+            quality: 65
+        },
+        pngquant: {
+            quality: "65-90",
+            speed: 4
+        },
+        svgo: {
+            plugins: [{
+                removeViewBox: false
+            }, {
+                removeEmptyAttrs: false
+            }]
+        }
+    },
 
     plugins: [
         new HtmlWebpackPlugin({

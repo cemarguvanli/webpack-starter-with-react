@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import config from './config.json';
-import './main.css';
-import styles from './Greeter.css';
+import './main.scss';
 
-class Greeter extends Component{
+import logoSvg from './react.svg';
+import logoPng from './react.png';
+
+export default class Greeter extends Component {
   render() {
     return (
-      <div className={styles.root}>
-        {config.greetText}
+      <div className="root">
+        <img src={logoSvg} alt="" />
+        <img src={logoPng} alt="" />
+        <h1>{config.greetTitle}</h1>
+        <p>{config.greetText}</p>
       </div>
     );
   }
-}
-
-export default Greeter
+};

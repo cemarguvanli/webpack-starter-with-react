@@ -1,0 +1,43 @@
+$main-color: red;
+
+html {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+img{
+  max-width: 100%;
+}
+.root {
+    color: $main-color;
+    padding: 10px;
+    img{
+      max-width: 150px;
+    }
+    h1{
+      display: flex;
+    }
+}
