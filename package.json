@@ -4,7 +4,7 @@
   "description": "this is a simple react + webpack starter",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress",
+    "start":  "webpack-dashboard -- webpack-dev-server --progress --config ./webpack.development.config.js",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
   "author": "Cem Arguvanlı",
@@ -24,6 +24,7 @@
     "react-transform-hmr": "^1.0.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
+    "webpack-dashboard": "^0.2.0",
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {

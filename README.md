@@ -1,1 +1,1 @@
-# webpack starte with react
+# webpack starter with react
