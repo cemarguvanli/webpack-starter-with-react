@@ -4,8 +4,8 @@
   "description": "this is a simple react + webpack starter",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dashboard -- webpack-dev-server --progress --config ./webpack.development.config.js",
-    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
+    "start": "webpack-dashboard -- webpack-dev-server --progress --config ./webpack.dev.config.js",
+    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress"
   },
   "author": "Cem Arguvanlı",
   "license": "ISC",
