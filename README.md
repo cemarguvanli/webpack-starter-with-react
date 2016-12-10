@@ -13,7 +13,7 @@ This repository includes just the webpack, react and babel.
 * Webpack dashboard (for the terminal) [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard)
 * Sass loader with [sass-loader](https://github.com/jtangelder/sass-loader)
 * Image loader with [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader)
-* Autoprefixer with [image-webpack-loader](https://github.com/passy/autoprefixer-loader)
+* Autoprefixer with [autoprefixer-loader](https://github.com/passy/autoprefixer-loader)
 * Develop locally with [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html)
 
 >Warning: Make sure you're using the latest version of Node.js and NPM
