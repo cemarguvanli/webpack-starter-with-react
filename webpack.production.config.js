@@ -6,7 +6,7 @@ module.exports = {
   entry: __dirname + "/app/main.js",
   output: {
     path: __dirname + "/build",
-    filename: "[name]-[hash].js"
+    filename: "js/[name]-[hash].js"
   },
 
   module: {
@@ -21,8 +21,15 @@ module.exports = {
         loader: 'babel'
       },
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css?modules!postcss')
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+      },
+      {
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
+        loaders: [
+            'file?hash=sha512&digest=hex&name=images/[hash].[ext]',
+            'image-webpack'
+        ]
       }
     ]
   },
