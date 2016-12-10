@@ -10,9 +10,9 @@ This repository includes just the webpack, react and babel.
 * Bundles [React](https://facebook.github.io/react/) with `jsx` syntax
 * Compiles ES6 (with [Babel](https://babeljs.io/))
 * Build with [webpack](https://webpack.github.io/)
-* Webpack Dashboard [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard)
-* Sass Loader [sass-loader](https://github.com/jtangelder/sass-loader)
-* Image Loader [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader)
+* Webpack dashboard (for the terminal) [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard)
+* Sass loader with [sass-loader](https://github.com/jtangelder/sass-loader)
+* Image loader with [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader)
 * Develop locally with [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html)
 
 >Warning: Make sure you're using the latest version of Node.js and NPM
@@ -40,7 +40,6 @@ go to [http://localhost:8080](http://localhost:8080) in your browser.
 # Table of Contents
 
 * [Getting Started](#getting-started)
-    * [Dependencies](#dependencies)
     * [Installing](#installing)
     * [Running the app](#running-the-app)
     * [Developing](#developing)
