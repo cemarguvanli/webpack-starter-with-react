@@ -60,7 +60,7 @@ After you have installed all dependencies, you can run the app with:
 npm start
 ```
 
-## Developing
+## Development
 
 ### Build files
 
